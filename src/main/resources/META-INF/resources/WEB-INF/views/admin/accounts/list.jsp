@@ -1,6 +1,15 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html><body>
+<html>
+<head>
+<%@ include file="/WEB-INF/views/common/_styles.jspf" %>
+
+  <meta charset="UTF-8">
+  <title>Admin Account</title>
+  <link rel="stylesheet" href="<c:url value='/css/admin.css'/>">
+</head>
+
+<body>
 <h2>Users</h2>
 <form method="get">
   <input name="q" value="${q}" placeholder="Search username"/><button>Search</button>

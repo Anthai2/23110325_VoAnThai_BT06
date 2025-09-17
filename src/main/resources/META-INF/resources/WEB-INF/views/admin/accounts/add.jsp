@@ -1,6 +1,14 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html><body>
+<link rel="stylesheet" href="<c:url value='/css/admin.css'/>">
+<html>
+<head>
+<%@ include file="/WEB-INF/views/common/_styles.jspf" %>
+  <meta charset="UTF-8">
+  <title>Admin Account</title>
+</head>
+
+<body>
 <h2>Add / Edit User</h2>
 <form method="post" action="<c:url value='/admin/users/saveOrUpdate'/>">
   <input type="hidden" name="id" value="${user.id}"/>

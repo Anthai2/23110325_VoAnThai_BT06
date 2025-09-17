@@ -2,7 +2,13 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html>
-<head><meta charset="UTF-8"><title>Category</title></head>
+<head>
+<%@ include file="/WEB-INF/views/common/_styles.jspf" %>
+
+  <meta charset="UTF-8">
+  <title>Admin Category</title>
+  <link rel="stylesheet" href="<c:url value='/css/admin.css'/>">
+</head>
 <body>
 <section class="row">
   <div class="col-6 offset-3 mt-4">

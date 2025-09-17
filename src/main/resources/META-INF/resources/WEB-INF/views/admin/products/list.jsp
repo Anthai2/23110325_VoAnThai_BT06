@@ -1,6 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html><body>
+<html>
+<head><%@ include file="/WEB-INF/views/common/_styles.jspf" %>
+</head>
+<body>
 <h2>Videos</h2>
 <form method="get">
   <input name="q" value="${q}" placeholder="Search title"/><button>Search</button>
